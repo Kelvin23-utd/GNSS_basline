@@ -2,13 +2,13 @@
 Make sure all dataset files are placed in the `data/` folder.
 
 ### Run all baselines individually:
-
+```bash
 python svm_baseline.py
 python xgboost_baseline.py
 python cnn_baseline.py
 python lstm_baseline.py
 python transformer_baseline.py
-
+```
 # Project Structure
 ```text
   baseline/
