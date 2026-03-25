@@ -10,7 +10,7 @@ python lstm_baseline.py
 python transformer_baseline.py
 
 # Project Structure
-
+```text
   baseline/
 ├── data/
 │ ├── W_FineSat_X.pth
@@ -35,7 +35,7 @@ python transformer_baseline.py
 ├── transformer_baseline.py
 │
 └── README.md
-
+```
 Summary table ( for now， still updating)
 
 Accuracy (mean ± std)
