@@ -1,74 +1,218 @@
 {
-  "svm_finesat": {
-    "selected_trial": "rbf_C10",
-    "accuracy": 0.9289999999999999,
-    "std": 0.02853068523537419,
-    "f1_macro": 0.9294652225321641,
-    "f1_macro_std": 0.02782204853812459,
-    "example_fold_f1_macro": 0.905826738860344,
-    "example_fold_per_class_f1": [
-      0.9210526315789473,
-      0.9333333333333333,
-      0.926829268292683,
-      0.8837209302325582,
-      0.8641975308641975
-    ],
-    "kernel": "rbf",
-    "C": 10.0,
-    "gamma": "scale",
-    "cv_folds": 5,
-    "preprocessing": "per-sample min-max normalization to [0,1]",
-    "trials": [
-      {
-        "name": "rbf_default",
-        "kernel": "rbf",
-        "C": 1.0,
-        "gamma": "scale",
-        "accuracy": 0.917,
-        "std": 0.02461706725018234,
-        "f1_macro": 0.9177982796118304,
-        "f1_macro_std": 0.023416810338691252
-      },
-      {
-        "name": "rbf_C10",
+    "svm_finesat": {
+        "selected_trial": "rbf_C10",
+        "accuracy": 0.9380000000000001,
+        "std": 0.02379075450674061,
+        "f1_macro": 0.938632677465679,
+        "f1_macro_std": 0.023082358463438715,
+        "example_fold_f1_macro": 0.9057604164507275,
+        "example_fold_per_class_f1": [
+            0.8831168831168831,
+            0.9473684210526315,
+            0.9090909090909091,
+            0.8735632183908046,
+            0.9156626506024096
+        ],
         "kernel": "rbf",
         "C": 10.0,
         "gamma": "scale",
-        "accuracy": 0.9289999999999999,
-        "std": 0.02853068523537419,
-        "f1_macro": 0.9294652225321641,
-        "f1_macro_std": 0.02782204853812459
-      },
-      {
-        "name": "rbf_C100",
-        "kernel": "rbf",
-        "C": 100.0,
-        "gamma": "scale",
-        "accuracy": 0.9289999999999999,
-        "std": 0.02853068523537419,
-        "f1_macro": 0.9294652225321641,
-        "f1_macro_std": 0.02782204853812459
-      },
-      {
-        "name": "rbf_gamma_0.01",
-        "kernel": "rbf",
-        "C": 10.0,
-        "gamma": 0.01,
-        "accuracy": 0.8309999999999998,
-        "std": 0.047895720059312204,
-        "f1_macro": 0.8347958820373563,
-        "f1_macro_std": 0.044745628104692556
-      },
-      {
-        "name": "rbf_gamma_0.1",
-        "kernel": "rbf",
-        "C": 10.0,
-        "gamma": 0.1,
-        "accuracy": 0.9259999999999999,
-        "std": 0.030724582991474406,
-        "f1_macro": 0.9264580809474259,
-        "f1_macro_std": 0.030000274510317428
-      }
-    ]
-  }
+        "cv_folds": 5,
+        "preprocessing": "per-sample standardization (zero mean, unit std)",
+        "trials": [
+            {
+                "name": "rbf_default",
+                "kernel": "rbf",
+                "C": 1.0,
+                "gamma": "scale",
+                "accuracy": 0.929,
+                "std": 0.023537204591879617,
+                "f1_macro": 0.9298595825896732,
+                "f1_macro_std": 0.022874145342300145
+            },
+            {
+                "name": "rbf_C10",
+                "kernel": "rbf",
+                "C": 10.0,
+                "gamma": "scale",
+                "accuracy": 0.9380000000000001,
+                "std": 0.02379075450674061,
+                "f1_macro": 0.938632677465679,
+                "f1_macro_std": 0.023082358463438715
+            },
+            {
+                "name": "rbf_C100",
+                "kernel": "rbf",
+                "C": 100.0,
+                "gamma": "scale",
+                "accuracy": 0.9380000000000001,
+                "std": 0.02379075450674061,
+                "f1_macro": 0.938632677465679,
+                "f1_macro_std": 0.023082358463438715
+            },
+            {
+                "name": "rbf_gamma_0.01",
+                "kernel": "rbf",
+                "C": 10.0,
+                "gamma": 0.02,
+                "accuracy": 0.893,
+                "std": 0.06801470429252778,
+                "f1_macro": 0.8943012741785976,
+                "f1_macro_std": 0.06672462786282975
+            },
+            {
+                "name": "rbf_gamma_0.1",
+                "kernel": "rbf",
+                "C": 10.0,
+                "gamma": 0.005,
+                "accuracy": 0.9380000000000001,
+                "std": 0.02379075450674061,
+                "f1_macro": 0.938632677465679,
+                "f1_macro_std": 0.023082358463438715
+            }
+        ]
+    },
+    "svm_raw": {
+        "accuracy": 0.734,
+        "std": 0.01685229954635273,
+        "f1_macro": 0.7155791563267715,
+        "per_class_f1": [
+            0.6598639455782312,
+            0.3157894736842105,
+            0.6972477064220184,
+            0.9528535980148883,
+            0.9521410579345088
+        ]
+    },
+    "xgboost_finesat": {
+        "accuracy": 0.956,
+        "std": 0.025179356624028326,
+        "f1_macro": 0.9562315572834242,
+        "per_class_f1": [
+            0.9595959595959596,
+            0.9585492227979274,
+            0.9330143540669856,
+            0.9651741293532339,
+            0.964824120603015
+        ]
+    },
+    "xgboost_raw": {
+        "accuracy": 0.845,
+        "std": 0.013038404810405309,
+        "f1_macro": 0.8448202195023331,
+        "per_class_f1": [
+            0.7488372093023256,
+            0.6509186351706037,
+            0.8917525773195877,
+            0.9674185463659147,
+            0.9651741293532339
+        ]
+    },
+    "cnn_finesat": {
+        "accuracy": 0.9120000000000001,
+        "std": 0.028035691537752358,
+        "f1_macro": 0.9119899705342828,
+        "per_class_f1": [
+            0.9578163771712159,
+            0.9261083743842364,
+            0.9667519181585678,
+            0.861904761904762,
+            0.8473684210526315
+        ],
+        "architecture": "Conv1d(1,32,7,pad=3)-BN-ReLU-MaxPool -> Conv1d(32,64,5,pad=2)-BN-ReLU-MaxPool -> Conv1d(64,128,3,pad=1)-BN-ReLU-AdaptiveAvgPool -> Dropout(0.3) -> Linear(128,5)",
+        "optimizer": "Adam",
+        "learning_rate": 0.0003,
+        "epochs": 50,
+        "batch_size": 32
+    },
+    "cnn_raw": {
+        "accuracy": 0.8400000000000001,
+        "std": 0.017888543819998295,
+        "f1_macro": 0.832138491248166,
+        "per_class_f1": [
+            0.7616926503340757,
+            0.5975609756097561,
+            0.9314420803782506,
+            0.9353233830845771,
+            0.9346733668341709
+        ],
+        "architecture": "Conv1d(1,32,7,pad=3)-BN-ReLU-MaxPool -> Conv1d(32,64,5,pad=2)-BN-ReLU-MaxPool -> Conv1d(64,128,3,pad=1)-BN-ReLU-AdaptiveAvgPool -> Dropout(0.3) -> Linear(128,5)",
+        "optimizer": "Adam",
+        "learning_rate": 0.0003,
+        "epochs": 50,
+        "batch_size": 32
+    },
+    "lstm_finesat": {
+        "accuracy": 0.40700000000000003,
+        "std": 0.007483314773547866,
+        "f1_macro": 0.3921204145172024,
+        "per_class_f1": [
+            0.27076923076923076,
+            0.25,
+            0.43243243243243246,
+            0.5471264367816092,
+            0.4602739726027397
+        ],
+        "architecture": "LSTM(input_size=1, hidden_size=64, num_layers=2, batch_first=True) -> Dropout(0.3) -> Linear(64,5)",
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "epochs": 50,
+        "batch_size": 32
+    },
+    "lstm_raw": {
+        "accuracy": 0.45899999999999996,
+        "std": 0.03337663853655728,
+        "f1_macro": 0.39570643965379043,
+        "per_class_f1": [
+            0.0,
+            0.5236051502145923,
+            0.3391003460207612,
+            0.5411140583554377,
+            0.5747126436781609
+        ],
+        "architecture": "LSTM(input_size=1, hidden_size=64, num_layers=2, batch_first=True) -> Dropout(0.3) -> Linear(64,5)",
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "epochs": 50,
+        "batch_size": 32
+    },
+    "transformer_finesat": {
+        "mean_accuracy": 0.806,
+        "std_accuracy": 0.02517935662402832,
+        "mean_macro_f1": 0.8043798276231886,
+        "std_macro_f1": 0.02751667302094406,
+        "fold_accuracies": [
+            0.8,
+            0.83,
+            0.815,
+            0.76,
+            0.825
+        ],
+        "fold_macro_f1s": [
+            0.8016182004789598,
+            0.8310633449574499,
+            0.8145145745635564,
+            0.7528293464154555,
+            0.821873671700522
+        ]
+    },
+    "transformer_raw": {
+        "mean_accuracy": 0.602,
+        "std_accuracy": 0.021118712081942895,
+        "mean_macro_f1": 0.5869749178825526,
+        "std_macro_f1": 0.030941723930829848,
+        "fold_accuracies": [
+            0.57,
+            0.59,
+            0.6,
+            0.625,
+            0.625
+        ],
+        "fold_macro_f1s": [
+            0.5407077899124559,
+            0.5656870592719649,
+            0.5887269624745904,
+            0.6234153221059511,
+            0.6163374556478004
+        ]
+    }
 }
