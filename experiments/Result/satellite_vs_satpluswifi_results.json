@@ -1,0 +1,177 @@
+{
+  "dataset": "W_FineSat",
+  "model": "SVM_RBF",
+  "setup": {
+    "fixed_satellite_test_per_class": 40,
+    "fixed_satellite_train_pool_per_class": 160,
+    "fixed_wifi_per_class": 100,
+    "k_definition": "K means number of satellite training samples per class"
+  },
+  "k_values": [
+    10,
+    25,
+    50,
+    100,
+    160
+  ],
+  "n_repeats": 5,
+  "satellite_only_results": [
+    {
+      "k_per_class": 10,
+      "satellite_train_total": 50,
+      "test_total": 200,
+      "accuracy_mean": 0.688,
+      "accuracy_std": 0.03695943722515264,
+      "accuracies": [
+        0.71,
+        0.625,
+        0.705,
+        0.73,
+        0.67
+      ]
+    },
+    {
+      "k_per_class": 25,
+      "satellite_train_total": 125,
+      "test_total": 200,
+      "accuracy_mean": 0.789,
+      "accuracy_std": 0.016552945357246864,
+      "accuracies": [
+        0.805,
+        0.79,
+        0.805,
+        0.785,
+        0.76
+      ]
+    },
+    {
+      "k_per_class": 50,
+      "satellite_train_total": 250,
+      "test_total": 200,
+      "accuracy_mean": 0.845,
+      "accuracy_std": 0.01843908891458575,
+      "accuracies": [
+        0.86,
+        0.85,
+        0.845,
+        0.86,
+        0.81
+      ]
+    },
+    {
+      "k_per_class": 100,
+      "satellite_train_total": 500,
+      "test_total": 200,
+      "accuracy_mean": 0.906,
+      "accuracy_std": 0.011135528725660053,
+      "accuracies": [
+        0.915,
+        0.915,
+        0.895,
+        0.89,
+        0.915
+      ]
+    },
+    {
+      "k_per_class": 160,
+      "satellite_train_total": 800,
+      "test_total": 200,
+      "accuracy_mean": 0.925,
+      "accuracy_std": 0.0,
+      "accuracies": [
+        0.925,
+        0.925,
+        0.925,
+        0.925,
+        0.925
+      ]
+    }
+  ],
+  "satellite_plus_fixed_wifi_results": [
+    {
+      "k_per_class": 10,
+      "satellite_train_total": 50,
+      "wifi_per_class": 100,
+      "wifi_total": 500,
+      "joint_train_total": 550,
+      "test_total": 200,
+      "accuracy_mean": 0.666,
+      "accuracy_std": 0.03720215047547653,
+      "accuracies": [
+        0.65,
+        0.6,
+        0.69,
+        0.69,
+        0.7
+      ]
+    },
+    {
+      "k_per_class": 25,
+      "satellite_train_total": 125,
+      "wifi_per_class": 100,
+      "wifi_total": 500,
+      "joint_train_total": 625,
+      "test_total": 200,
+      "accuracy_mean": 0.774,
+      "accuracy_std": 0.021307275752662534,
+      "accuracies": [
+        0.81,
+        0.775,
+        0.78,
+        0.75,
+        0.755
+      ]
+    },
+    {
+      "k_per_class": 50,
+      "satellite_train_total": 250,
+      "wifi_per_class": 100,
+      "wifi_total": 500,
+      "joint_train_total": 750,
+      "test_total": 200,
+      "accuracy_mean": 0.8460000000000001,
+      "accuracy_std": 0.023958297101421857,
+      "accuracies": [
+        0.86,
+        0.865,
+        0.845,
+        0.86,
+        0.8
+      ]
+    },
+    {
+      "k_per_class": 100,
+      "satellite_train_total": 500,
+      "wifi_per_class": 100,
+      "wifi_total": 500,
+      "joint_train_total": 1000,
+      "test_total": 200,
+      "accuracy_mean": 0.9,
+      "accuracy_std": 0.011832159566199244,
+      "accuracies": [
+        0.905,
+        0.915,
+        0.905,
+        0.88,
+        0.895
+      ]
+    },
+    {
+      "k_per_class": 160,
+      "satellite_train_total": 800,
+      "wifi_per_class": 100,
+      "wifi_total": 500,
+      "joint_train_total": 1300,
+      "test_total": 200,
+      "accuracy_mean": 0.93,
+      "accuracy_std": 0.003162277660168382,
+      "accuracies": [
+        0.935,
+        0.93,
+        0.93,
+        0.925,
+        0.93
+      ]
+    }
+  ]
+}
